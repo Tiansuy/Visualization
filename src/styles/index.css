@@ -1,0 +1,128 @@
+
+:root {
+  --main-bg-color: black;
+}
+
+.root {
+  color: var(--main-bg-color);
+}
+
+.bg-mytheme {
+  background: linear-gradient(to bottom right,#1c346b, #1474a4);
+}
+.bg-light {
+  background:#1474a4;
+  color: #fff;
+}
+
+.q-layout {
+  min-height: 20vh !important;
+  margin-top: -20px;
+  padding: 0;
+}
+
+.q-btn-dropdown {
+  height: 40px;
+  border-radius: 3px;
+  background-color: #1474a4;
+  color: #fff !important;
+  font-size: 12px !important;
+}
+.q-btn-dropdown:hover {
+  background-color: #fff;
+  color: rgb(52, 14, 117) !important;
+  border-radius: 8px;
+  border: 2px solid rgba(52, 0, 155, 0.906);
+  font-size: 14px !important;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.tool-bar-btn {
+  height: 40px !important;
+  border-radius: 3px !important;
+  background-color: #1474a4 !important;
+  color: #fff !important;
+  font-size: 12px !important;
+}
+
+
+.tool-bar-btn:hover {
+  background-color: #fff !important;
+  color: rgb(52, 14, 117) !important;
+  border-radius: 8px !important;
+  border: 2px solid rgba(52, 0, 155, 0.906) !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  font-style: italic !important;
+  letter-spacing: .06em;
+  transform: skew(-10deg);
+}
+
+.select-btn {
+  height: 40px !important;
+  /* min-width: 10px !important; */
+  width: 138px !important;
+
+  background-color: #fff;
+  color: rgb(52, 14, 117) !important;
+  /* border-radius: 8px; */
+  border: 1px solid rgba(166, 166, 166, 0.906);
+  border-bottom: 2px solid rgba(52, 0, 155, 0.906);
+  border-top-left-radius:4px;
+  border-top-right-radius:4px;
+}
+.select-btn:hover {
+  border-radius: 3px;
+  border: 2px solid rgba(52, 0, 155, 0.906);
+
+  font-size: 14px !important;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.select-btn input{
+  /* border: 1px solid #000; */
+  padding: 10px;
+  margin-top: -18px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px !important;
+  letter-spacing: 1px;
+}
+
+.select-btn .q-field__native {
+  color: rgb(52, 14, 117) !important;
+}
+.select-btn:hover .q-field__native {
+  font-size: 17px !important;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.bd {
+  border: 1px solid red;
+}
+
+@keyframes turnIn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes turnOut {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.logo {
+  animation: turnOut 1s ease-out 0s 1 normal;
+}
+.logo:hover {
+  animation: turnIn 1s ease-out 0s 1 normal;
+}
