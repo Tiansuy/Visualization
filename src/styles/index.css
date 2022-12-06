@@ -7,8 +7,11 @@
   color: var(--main-bg-color);
 }
 
-.bg-mytheme {
+.bg-mytheme-blue {
   background: linear-gradient(to bottom right,#1c346b, #1474a4);
+}
+.bg-mytheme-brown {
+  background: linear-gradient(to bottom right,#c07505, #dabb55);
 }
 .bg-light {
   background:#1474a4;
@@ -122,6 +125,9 @@
 }
 .logo {
   animation: turnOut 1s ease-out 0s 1 normal;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
 }
 .logo:hover {
   animation: turnIn 1s ease-out 0s 1 normal;

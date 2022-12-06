@@ -3,7 +3,7 @@
     <div class="row justify-center q-gutter-lg q-gutter-x-xl items-center">
       <div
         class="col-3 col-sm-auto col-xs-12"
-        v-for="item in getDemos(9)"
+        v-for="item in realDemos"
         :key="item.id"
       >
         <div class="card-container">
@@ -42,9 +42,19 @@ const getDemos = (num: number) => {
   }
   return res;
 };
-const lorem =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
-
+const realDemos = [
+    {
+    id: 0,
+    name: "c-color",
+    title: "Chinese Traditional Color",
+    path:'/ChineseColor'
+  },{
+    id: 1,
+    name: "nobel",
+    title: "Nobel Prize Vis",
+    path:'/Nobel'
+  },
+]
 const toDemo = (path: string)=>{
     router.push(path)
 }
@@ -78,7 +88,5 @@ const toDemo = (path: string)=>{
     height: 100px
     width: 400px
     object-fit: cover
-
-.text-h6
 
 </style>

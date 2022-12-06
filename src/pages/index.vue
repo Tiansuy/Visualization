@@ -1,11 +1,11 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated class="bg-mytheme text-white">
+    <q-header elevated :class="getTheme() + ' text-white'">
       <q-toolbar>
         <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title>
-          <q-avatar class="logo">
+          <q-avatar @click="changeTheme" class="logo">
             <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
           </q-avatar>
           Title
@@ -17,14 +17,13 @@
       v-model="leftDrawerOpen"
       show-if-above
       bordered
-      class="bg-mytheme text-white"
+      :class="getTheme() + ' text-white'"
       :width="200"
+      mini
     >
-      <div class="q-mt-md logo">
-        <q-avatar>
-          <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
-        </q-avatar>
-      </div>
+      <q-avatar class="q-mt-md logo">
+        <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
+      </q-avatar>
       <q-list class="q-mt-sm">
         <q-item to="/" active-class="q-item-no-link-highlighting">
           <q-item-section avatar>
@@ -50,12 +49,25 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, nextTick, reactive} from "vue";
 
 const leftDrawerOpen = ref(false);
 const toggleLeftDrawer = () => {
   leftDrawerOpen.value = !leftDrawerOpen.value;
 };
+const themes = [
+    'bg-mytheme-blue',
+    'bg-mytheme-brown'
+  ];
+const rdata = reactive({
+  theme: 0
+})
+const changeTheme = async ()=>{
+  rdata.theme = rdata.theme+1 < themes.length ? rdata.theme+1 : 0;
+}
+const getTheme = ()=>{
+  return themes[rdata.theme]
+}
 </script>
 
 <style scoped>
