@@ -42,6 +42,92 @@ const countryList = [
   "日本",
   "澳大利亚",
 ];
+const ctLiEn = [
+
+  "Mexico",
+  
+  "Guatemala",
+  
+  "Colombia",
+  
+  "Chile",
+  
+  "Saint Lucia",
+  
+  "Argentina",
+  
+  "America",
+  
+  "Canada",
+  
+  "Iceland",
+  
+  "Portugal",
+  
+  "Ireland",
+  
+  "Spain",
+  
+  "Britain",
+  
+  "France",
+  
+  "Belgium",
+  
+  "The Netherlands",
+  
+  "Switzerland",
+  
+  "Norway",
+  
+  "Italy",
+  
+  "Denmark",
+  
+  "Germany",
+  
+  "Czech Republic",
+  
+  "Austria",
+  
+  "Sweden",
+  
+  "Hungary",
+  
+  "BiH",
+  
+  "Poland",
+  
+  "Greece",
+  
+  "Finland",
+  
+  "Russia",
+  
+  "Belarus",
+  
+  "Nigeria",
+  
+  "South Africa",
+  
+  "Türkiye",
+  
+  "Egypt",
+  
+  "Cyprus",
+  
+  "Israel",
+  
+  "Pakistan",
+  
+  "India",
+  
+  "China",
+  
+  "Japan",
+  
+  "Australia",
+];
 //const nobelDotColor = ["#21acef","#44a94b","#de9222","#f54a52","#736bb4"];
 const nobelDotColor = ["#27aae1", "#39b54a", "#f7941e", "#ef4136", "#92278f"];
 
@@ -14474,6 +14560,7 @@ const nobelImgSource = [
 
 export {
   countryList,
+  ctLiEn,
   nobelDotColor,
   nbAllPerson,
   secondPieData,

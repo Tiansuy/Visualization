@@ -11,7 +11,7 @@
   background: linear-gradient(to bottom right,#1c346b, #1474a4);
 }
 .bg-mytheme-brown {
-  background: linear-gradient(to bottom right,#c07505, #dabb55);
+  background: linear-gradient(to bottom right,#f09c5a, #f09c5a90);
 }
 .bg-light {
   background:#1474a4;
@@ -131,4 +131,8 @@
 }
 .logo:hover {
   animation: turnIn 1s ease-out 0s 1 normal;
+}
+
+.q-page {
+  background: #c7d2d4;
 }

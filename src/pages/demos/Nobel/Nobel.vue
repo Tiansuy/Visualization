@@ -9,6 +9,7 @@ import { onMounted, nextTick} from "vue";
 import * as d3 from "d3";
 import {
   countryList,
+  ctLiEn,
   nobelDotColor,
   nbAllPerson,
   secondPieData,
@@ -195,7 +196,7 @@ function drawChart() {
   // text 排列，参考这个实现
   // https://observablehq.com/@d3/radial-stacked-bar-chart
   function drawCountry() {
-    countryList.map((country, i) => {
+    ctLiEn.map((country, i) => {
       const [x, y] = getCoordinatesForAngle(
         countryScale(i),
         dimensions.countryBarRadius
@@ -423,6 +424,7 @@ onMounted(() => {
 
 <style scoped>
 .bgc {
+    height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -433,8 +435,8 @@ onMounted(() => {
   background: #fdf1cc;
 }
 
-/* .grid-line {
-  fill: transparent !important;
-  stroke: #6962c8 !important;
-} */
+#wrapper {
+    position: absolute;
+    top: 5%;
+}
 </style>
